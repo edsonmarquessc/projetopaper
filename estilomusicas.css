@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(30, 131, 131, 0.514);
+}
+
+main {
+    background-color: rgba(33, 73, 161, 0.527);
+
+}
+
+h1 {
+    
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
