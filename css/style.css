@@ -1,25 +1,16 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-@font-face {
-    font-family: 'Android';
-    src: url('../fontes/idroid.otf') format('opentype');
-    font-weight: normal;
-}
-
 
 :root {
-    --cor0: #e3ebc5;
-    --cor1: #b5e183;
-    --cor2: #acdc3d;
-    --cor3: #a82f2f;
-    --cor4: #4e5c1a;
-    --cor5: #0e063d;
+    --cor0: #e6a910be;
+    --cor1: #c7ff0d88;
+    --cor2: #aff50ba1;
+    --cor3: #000000;
+    --cor4: #3a3a34ee;
+    --cor5: #0a0803ad;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', cursive;
 }
 
 * {
@@ -30,6 +21,13 @@
 body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
+}
+
+form div {
+    font-size: 22px;
+    background-color: rgb(158, 81, 50);
+    text-align: center;
+    
 }
 
 a.externo::after {
@@ -86,6 +84,37 @@ nav > a {
     font-weight: bold;
     border-radius: 10px;
     transition-duration: .3s; /* transicao de um link para o outro*/
+}
+
+div {
+    text-align: center;
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418); /* sombra */
+    
+}
+
+div > a {
+    color: white;
+    padding: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition-duration: .3s; /* transicao de um link para o outro*/
+    
+}
+
+div > h3 {
+    color: white;
+    padding: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+div > a:hover {  /* :houver para quando passar o mouse, os dois pontos é o pseudo classe */
+    background-color: var(--cor2);
+    color: var(--cor5);
 }
 
 nav > h3 {

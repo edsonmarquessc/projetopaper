@@ -7,7 +7,7 @@ include_once 'conexao.php';
 <head>
     <meta charset="UTF-8">
     <title>Perguntas e respostas</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
 

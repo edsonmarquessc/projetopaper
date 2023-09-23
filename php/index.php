@@ -8,7 +8,7 @@ include_once 'conexao.php';
 <head>
     <meta charset="UTF-8">
     <title>Perguntas e respostas</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
 
@@ -54,8 +54,12 @@ if(isset($_SESSION['msg'])){
         if(($result_pergunta) AND $result_pergunta->rowCount() != 0){
             $row_pergunta = $result_pergunta->fetch(PDO::FETCH_ASSOC);
             extract($row_pergunta);
+            echo "<div class='pergunta'>";
             echo $questao . "<br><br>";
+            echo "</div>";
+            echo "<div class='pergunta'>";
             echo "<label>Alterantivas:</label><br><br>";
+            echo "</div>";
             echo "<input type='hidden' name='id_pergunta' value='$id'>";
 
             $query_resposta = "SELECT id AS id_resposta, resposta FROM alternativas WHERE pergunta_id = $id ORDER BY id ASC";
@@ -79,7 +83,6 @@ if(isset($_SESSION['msg'])){
     <br>
     <input type="submit" name="valResposta" value="Enviar">
 </form>
-
 <hr>
 <a href="index.php">Próxima</a>
 
