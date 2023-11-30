@@ -95,6 +95,7 @@ abbr {
 .cabecalho,
 .formulario {
     position: relative;
+    color: #009E9D;
 }
 
 form {
