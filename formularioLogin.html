@@ -6,22 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styleLogin.css">
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <title>Login</title>
 </head>
 
 <body>
     <main class="pontainer">
-        <h2>Login
-            <a href="index.html"><span class="material-symbols-outlined">
-                    home
-                </span></button></a>
-        </h2><br>
-        <form action="index.html">
+       
+        <form action="restricao.php" method="post">
             <div class="input-top">
-                <input required type="email" name="email" id="email" placeholder=" Digite seu E-mail">
+                <input required type="email" name="email" id="email" placeholder="Digite seu E-mail">
                 <span class="erro-input"></span>
             </div>
             <div class="input-top">
@@ -29,19 +24,18 @@
                 <span class="erro-input"></span>
             </div>
 
-            <input id="submit" type="submit" value="Continue">
+            <input id="submit" type="submit" name="submit" value="ENTRAR">
         </form>
 
         <div class="etc">
-            <span>Não tem uma conta?</span>
+            <span>NÃO TEM CONTA?</span>
         </div>
         <div class="cadastro">
             <a href="formularioCadastro.html">
-                <button id="submit-cadastro" value="Cadastre-se">Cadastre-se</button>
+                <button id="submit-cadastro" value="Cadastre-se">CADASTRA-SE</button>
             </a>
         </div>
     </main>
 </body>
-<script src="scripts/script.js"></script>
 
 </html>

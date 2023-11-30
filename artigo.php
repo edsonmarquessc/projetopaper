@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if((isset($_SESSION['email']) === true) && (isset($_SESSION['pass']) === true)) {
+        unset($_SESSION['email']);
+        unset($_SESSION['pass']);
+        header('Location: formularioLogin.html');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,12 +25,6 @@
         <br>
     </header>
 
-    <div>
-            <h3>FAZER: LOGIN OU CADASTRE-SE</h3>
-            <a href="formularioLogin.html">LOGIN</a><br><br>
-            <a href="formularioCadastro.html">CADASTRO</a>
-    </div>
-    
     <main>
         <article>
             <h1>
@@ -81,7 +84,7 @@
                         5 - <abbr title="descreve um evento, um intenção">Pesquisa descritiva</abbr>
                     </li>
                     <li>
-                        6 - <abbr title="É quendo se quer reunir informações de algo">Pesquisa bibliográfica</abbr>
+                        6 - <abbr title="É quando se quer reunir informações de algo">Pesquisa bibliográfica</abbr>
                     </li>
                     
                 </ul>
@@ -94,7 +97,7 @@
         </article>
     </main>
     <footer>
-        <p>Site criado por: <a href="#">Edson Marques</a></p>
+        <p>Site criado por: <a href="Edson Marques">Edson Marques</a></p>
     </footer>
 </body>
 </html>
